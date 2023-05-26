@@ -1,336 +1,487 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
     <title>Glanz Expert</title>
-    <meta name="description" content="Free bootstrap template Atlas" />
-    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png" />
-    <!-- custom.css -->
-    <link rel="stylesheet" href="css/custom.css" />
-    <!-- bootstrap.min.css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <meta property="og:title" content="Neat Equal Bee" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="css/aos.css" />
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
-    <!-- banner -->
-    <div
-      class="jumbotron jumbotron-fluid"
-      id="banner"
-      style="background-image: url(img/banner-bk.jpg)"
-    >
-      <div class="container text-center text-md-left">
-        <header>
-          <div class="row justify-content-between">
-            <div class="col-2">
-              <img src="img/logo.png" alt="logo" />
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Accordion" class="home-header">
+          <img
+            alt="logo"
+            src="public/external/500x200%20logo.svg"
+            class="home-image"
+          />
+        </header>
+        <header data-role="Header" class="home-nav-bar">
+          <div class="home-nav">
+            <nav
+              class="navigation-links-nav navigation-links-root-class-name10"
+            >
+              <span class="navigation-links-text"><span>LEISTUGEN</span></span>
+              <span class="navigation-links-text1"><span>PREISE</span></span>
+              <span class="navigation-links-text2"><span>KONTAKT</span></span>
+              <span class="navigation-links-text3"><span>UBER UNS</span></span>
+              <span class="navigation-links-text4"><span>IMPRESSUM</span></span>
+            </nav>
+          </div>
+          <div class="home-btn-group">
+            <button class="home-register button">JETZT ANRUFEN</button>
+          </div>
+          <div data-role="BurgerMenu" class="home-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="home-icon">
+              <path
+                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+              ></path>
+            </svg>
+          </div>
+          <div data-role="MobileMenu" class="home-mobile-menu">
+            <div class="home-nav1">
+              <div class="home-container01">
+                <img
+                  alt="image"
+                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+                  class="home-image1"
+                />
+                <div data-role="CloseMobileMenu" class="home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                class="navigation-links-nav navigation-links-root-class-name11"
+              >
+                <span class="navigation-links-text">
+                  <span>LEISTUGEN</span>
+                </span>
+                <span class="navigation-links-text1"><span>PREISE</span></span>
+                <span class="navigation-links-text2"><span>KONTAKT</span></span>
+                <span class="navigation-links-text3">
+                  <span>UBER UNS</span>
+                </span>
+                <span class="navigation-links-text4">
+                  <span>IMPRESSUM</span>
+                </span>
+              </nav>
             </div>
-            <!-- <div class="col-6 align-self-center text-right">
-              <a href="#" class="text-white lead">Get Early Access</a>
-            </div> -->
+            <div>
+              <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
+                <path
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg
+              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg
+              ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path>
+              </svg>
+            </div>
           </div>
         </header>
-        <h1
-          data-aos="fade"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          class="display-3 text-white font-weight-bold my-5"
-        >
-          Glanz Expert
-        </h1>
-        <p
-          data-aos="fade"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          class="lead text-white my-4"
-        >
-          Welcome to my business.
-          <br />
-          Come get your car detailed.
-        </p>
-        <a
-          href="#"
-          data-aos="fade"
-          data-aos-easing="linear"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          class="btn my-4 font-weight-bold atlas-cta cta-green"
-          >Contact Us</a
-        >
-      </div>
-    </div>
-    <!-- three-blcok -->
-    <div class="container my-5 py-2">
-      <h2 class="text-center font-weight-bold my-5">Check out my deals!</h2>
-      <div class="row">
-        <div
-          data-aos="fade-up"
-          data-aos-delay="0"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          class="col-md-4 text-center"
-        >
-          <img src="img/smart-protect-1.jpg" alt="Anti-spam" class="mx-auto" />
-          <h4>Anti-spam</h4>
-          <p>Lorem ipsum dolor sit amet porro his no his deleniti</p>
+        <div class="home-banner">
+          <h1 class="home-text">WILKOMMEN</h1>
+          <span class="home-text01">
+            Willkommen bei Glanz expert! Wir sind stolz darauf, Ihnen
+            professionelle Autoaufbereitungsdienstleistungen anzubieten, um Ihr
+            Fahrzeug in neuem Glanz erstrahlen zu lassen. Egal, ob es um die
+            gründliche Innenreinigung, eine umfassende Lackpflege oder die
+            Aufbereitung des gesamten Fahrzeugs geht, unser erfahrenes Team
+            steht Ihnen mit Expertise und Leidenschaft zur Seite. Wir verwenden
+            hochwertige Reinigungsmittel und moderne Techniken, um die besten
+            Ergebnisse zu erzielen und Ihren hohen Ansprüchen gerecht zu werden.
+            Bei uns steht die Kundenzufriedenheit an erster Stelle, daher legen
+            wir großen Wert auf gründliche und sorgfältige Arbeit. Vertrauen Sie
+            uns Ihr Fahrzeug an und erleben Sie den Unterschied einer
+            professionellen Autoaufbereitung. Wir freuen uns darauf, Ihnen mit
+            unserem Service zu begeistern und Ihr Fahrzeug in einen Zustand zu
+            versetzen, der Sie stolz macht. Kontaktieren Sie uns noch heute, um
+            einen Termin zu vereinbaren und Ihr Auto in neuem Glanz erstrahlen
+            zu lassen
+          </span>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          class="col-md-4 text-center"
-        >
+        <div class="home-hero">
+          <div class="home-container02">
+            <h1 class="home-text02">LEISTUNGEN</h1>
+            <span class="home-text03">
+              <span>
+                Innenraumreinigung: Staubsaugen, Reinigung von Sitzen,
+                Teppichen, Fußmatten und Polstern, sowie Säuberung von
+                Armaturenbrett, Türverkleidungen und Lenkrad.
+              </span>
+              <br />
+              <br />
+              <br />
+              <br />
+              <span>
+                Außenreinigung: Gründliche Fahrzeugwäsche, Reinigung von Felgen,
+                Reifen, Scheiben und Spiegeln, Entfernung von Schmutz,
+                Insektenrückständen und Vogelkot.
+              </span>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <span>
+                Lackaufbereitung: Entfernung von Kratzern, Swirls,
+                Lackverunreinigungen und Oxidation, Politur und Wachsschicht für
+                einen glänzenden Look und Schutz des Lacks.
+              </span>
+              <br />
+              <br />
+              <br />
+              <br />
+              <span>
+                Innenraumpflege: Lederreinigung und -konditionierung,
+                Kunststoffpflege, Flecken- und Geruchsentfernung sowie
+                Auffrischung des Innenraumdufts.
+              </span>
+              <br />
+              <br />
+              <br />
+              <br />
+              <span>
+                Motorraumreinigung: Entfernung von Schmutz, Fett und
+                Ablagerungen für eine verbesserte Motorleistung.
+              </span>
+              <br />
+              <br />
+              <br />
+              <br />
+              <span>
+                Geruchsbeseitigung: Einsatz von Techniken zur Neutralisierung
+                unangenehmer Gerüche wie Zigarettenrauch, Tiergerüche oder
+                verschütteter Flüssigkeiten.
+              </span>
+              <br />
+              <br />
+              <br />
+              <span>
+                Mobile einsatz: Wir kommen bis zu ihnen nachhause und machen
+                ihre auto tipptopp vorort!
+              </span>
+              <br />
+              <br />
+            </span>
+          </div>
           <img
-            src="img/smart-protect-2.jpg"
-            alt="Phishing Detect"
-            class="mx-auto"
+            alt="image"
+            src="https://play.teleporthq.io/static/svg/default-img.svg"
+            class="home-image2"
           />
-          <h4>Phishing Detect</h4>
-          <p>Ne error antiopam usu. Sed vocen concludaturque ea</p>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="1000"
-          data-aos-once="true"
-          class="col-md-4 text-center"
-        >
-          <img src="img/smart-protect-3.jpg" alt="Smart Scan" class="mx-auto" />
-          <h4>Smart Scan</h4>
-          <p>Et usu ocurreret elaboraret doctus prodesse assueverit.</p>
-        </div>
-      </div>
-    </div>
-    <!-- feature (skew background) -->
-    <div class="jumbotron jumbotron-fluid feature" id="feature-first">
-      <div class="container my-5">
-        <div class="row justify-content-between text-center text-md-left">
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-once="true"
-            class="col-md-6"
-          >
-            <h2 class="font-weight-bold">Take a look inside</h2>
-            <p class="my-4">
-              Te iisque labitur eos, nec sale argumentum scribentur no, <br />
-              augue disputando in vim. Erat fugit sit at, ius lorem deserunt
-              deterruisset no.
-            </p>
-            <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue"
-              >Learn More</a
-            >
-          </div>
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-once="true"
-            class="col-md-6 align-self-center"
-          >
-            <img
-              src="img/feature-1.png"
-              alt="Take a look inside"
-              class="mx-auto d-block"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- feature (green background) -->
-    <div class="jumbotron jumbotron-fluid feature" id="feature-last">
-      <div class="container">
-        <div class="row justify-content-between text-center text-md-left">
-          <div
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-once="true"
-            class="col-md-6 flex-md-last"
-          >
-            <h2 class="font-weight-bold">Safe and reliable</h2>
-            <p class="my-4">
-              Duo suas detracto maiestatis ad, commodo lucilius invenire nec ad,
-              <br />
-              eum et oratio disputationi. Falli lobortis his ad
-            </p>
-            <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue"
-              >Learn More</a
-            >
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-once="true"
-            class="col-md-6 align-self-center flex-md-first"
-          >
-            <img
-              src="img/feature-2.png"
-              alt="Safe and reliable"
-              class="mx-auto d-block"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- price table -->
-    <!-- <div class="container my-5 py-2" id="price-table">
-        <h2 class="text-center font-weight-bold d-block mb-3">Check our pricing</h2>
-        <div class="row">
-            <div data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
-                <h4 class="my-4">STARTUP</h4>
-                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">0</span> / MO.</p>
-                <ul class="list-unstyled">
-                    <li>Up to 5 Documents</li>
-                    <li>Up to 3 Reviews</li>
-                    <li>5 team Members</li>
-                    <li>Limited Support</li>
-                </ul>
-                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5 rounded" id="price-table__premium">
-                <h4 class="my-4">PREMIUM</h4>
-                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">10</span> / MO.</p>
-                <ul class="list-unstyled">
-                    <li>Up to 15 Documents</li>
-                    <li>Up to 10 Reviews</li>
-                    <li>25 team Members</li>
-                    <li>Limited Support</li>
-                </ul>
-                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-green">Get Free</a>
-            </div>
-            <div data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="col-md-4 text-center py-4 mt-5">
-                <h4 class="my-4">PROFESSIONAL</h4>
-                <p class="font-weight-bold">$ <span class="display-2 font-weight-bold">30</span> / MO.</p>
-                <ul class="list-unstyled">
-                    <li>Unlimited Documents</li>
-                    <li>Unlimited Reviews</li>
-                    <li>Unlimited Members</li>
-                    <li>Unlimited Support</li>
-                </ul>
-                <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-ghost">Get Free</a>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- client -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 col-md-2 py-2 align-self-center">
-            <img src="img/client-1.png" class="mx-auto d-block" />
-          </div>
-          <div class="col-sm-4 col-md-2 py-2 align-self-center">
-            <img src="img/client-2.png" class="mx-auto d-block" />
-          </div>
-          <div class="col-sm-4 col-md-2 py-2 align-self-center">
-            <img src="img/client-3.png" class="mx-auto d-block" />
-          </div>
-          <div class="col-sm-4 col-md-2 py-2 align-self-center">
-            <img src="img/client-4.png" class="mx-auto d-block" />
-          </div>
-          <div class="col-sm-4 col-md-2 py-2 align-self-center">
-            <img src="img/client-5.png" class="mx-auto d-block" />
-          </div>
-          <div class="col-sm-4 col-md-2 py-2 align-self-center">
-            <img src="img/client-6.png" class="mx-auto d-block" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- contact -->
-    <div
-      class="jumbotron jumbotron-fluid"
-      id="contact"
-      style="background-image: url(img/contact-bk.jpg)"
-    >
-      <div class="container my-5">
-        <div class="row justify-content-between">
-          <div class="col-md-6 text-white">
-            <h2 class="font-weight-bold">Contact Us</h2>
-            <p class="my-4">
-              Te iisque labitur eos, nec sale argumentum scribentur,
-              <br />
-              augue disputando in vim. Erat fugit sit at, ius lorem.
-            </p>
-            <ul class="list-unstyled">
-              <li>Email : company_email@com</li>
-              <li>Phone : 361-688-5824</li>
-              <li>Address : 4826 White Avenue, Corpus Christi, Texas</li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <form>
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="name" class="form-control" id="name" />
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="Email">Your Email</label>
-                  <input type="email" class="form-control" id="Email" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-              </div>
-              <button
-                type="submit"
-                class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3"
+        <div class="home-testimonial">
+          <div class="home-container03">
+            <h1 class="home-text37">REFERENZEN</h1>
+            <div class="home-container04">
+              <div
+                class="testimonial-card1-testimonial-card testimonial-card1-root-class-name2"
               >
-                Submit
-              </button>
-            </form>
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="testimonial-card1-icon"
+                >
+                  <path
+                    d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                  ></path>
+                </svg>
+                <div class="testimonial-card1-testimonial">
+                  <span class="testimonial-card1-text">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In lorem lorem, malesuada in metus vitae, scelerisque
+                      accumsan ipsum. Nam pellentesque nulla leo, sagittis
+                      vehicula sem commodo nec.
+                    </span>
+                  </span>
+                  <span class="testimonial-card1-text1">
+                    <span>Jane Doe</span>
+                  </span>
+                  <span class="testimonial-card1-text2">
+                    <span>SOFTWARE ENGINEER</span>
+                  </span>
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUxOTgy&amp;ixlib=rb-1.2.1&amp;h=1200"
+                    class="testimonial-card1-image"
+                  />
+                </div>
+              </div>
+              <div
+                class="testimonial-card1-testimonial-card testimonial-card1-root-class-name"
+              >
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="testimonial-card1-icon"
+                >
+                  <path
+                    d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                  ></path>
+                </svg>
+                <div class="testimonial-card1-testimonial">
+                  <span class="testimonial-card1-text">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In lorem lorem, malesuada in metus vitae, scelerisque
+                      accumsan ipsum. Nam pellentesque nulla leo, sagittis
+                      vehicula sem commodo nec.
+                    </span>
+                  </span>
+                  <span class="testimonial-card1-text1">
+                    <span>Jane Doe</span>
+                  </span>
+                  <span class="testimonial-card1-text2">
+                    <span>SOFTWARE ENGINEER</span>
+                  </span>
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                    class="testimonial-card1-image"
+                  />
+                </div>
+              </div>
+              <div
+                class="testimonial-card1-testimonial-card testimonial-card1-root-class-name1"
+              >
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="testimonial-card1-icon"
+                >
+                  <path
+                    d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                  ></path>
+                </svg>
+                <div class="testimonial-card1-testimonial">
+                  <span class="testimonial-card1-text">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In lorem lorem, malesuada in metus vitae, scelerisque
+                      accumsan ipsum. Nam pellentesque nulla leo, sagittis
+                      vehicula sem commodo nec.
+                    </span>
+                  </span>
+                  <span class="testimonial-card1-text1">
+                    <span>Jane Doe</span>
+                  </span>
+                  <span class="testimonial-card1-text2">
+                    <span>SOFTWARE ENGINEER</span>
+                  </span>
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUxOTgy&amp;ixlib=rb-1.2.1&amp;h=1200"
+                    class="testimonial-card1-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-pricing">
+          <div class="home-container05">
+            <div class="home-pricing-card">
+              <span class="home-text38">Free</span>
+              <div class="home-container06">
+                <span class="home-text39">
+                  <span>$</span>
+                  <span></span>
+                </span>
+                <span class="home-text42">0</span>
+              </div>
+              <div class="home-container07">
+                <span class="home-text43">
+                  <span>✔ Full access to design tool</span>
+                </span>
+                <span class="home-text45">
+                  <span>✔ Publish with Teleport</span>
+                </span>
+                <span class="home-text47">
+                  <span>✔ Subdomain publish</span>
+                </span>
+                <span class="home-text49"><span>✔ Download code</span></span>
+              </div>
+              <button class="home-button button">Learn More</button>
+            </div>
+            <div class="home-pricing-card1">
+              <span class="home-text51">basic</span>
+              <div class="home-container08">
+                <span class="home-text52">
+                  <span>$</span>
+                  <span></span>
+                </span>
+                <span class="home-text55">9</span>
+                <span class="home-text56"><span>/ monthly</span></span>
+              </div>
+              <span class="home-text58">
+                <span>Billed annualy or $12 month-to-month.</span>
+                <span></span>
+              </span>
+              <div class="home-container09">
+                <span class="home-text61">
+                  <span>✔ All features of FREE plan</span>
+                </span>
+                <span class="home-text63">
+                  <span>✔ Connect to custom domains</span>
+                </span>
+                <span class="home-text65"><span>✔ Private projects</span></span>
+                <span class="home-text67">
+                  <span>✔ No project limitations</span>
+                </span>
+                <span class="home-text69">
+                  <span>✔ Unlimited collabotators</span>
+                </span>
+              </div>
+              <button class="home-button1 button">Learn More</button>
+            </div>
+            <div class="home-pricing-card2">
+              <span class="home-text71">Pro</span>
+              <div class="home-container10">
+                <span class="home-text72">
+                  <span>$</span>
+                  <span></span>
+                </span>
+                <span class="home-text75">29</span>
+                <span class="home-text76"><span>/ monthly</span></span>
+              </div>
+              <span class="home-text78">
+                <span>Billed annualy or $32 month-to-month.</span>
+                <span></span>
+              </span>
+              <div class="home-container11">
+                <span class="home-text81">
+                  <span>✔ All features of BASIC plan</span>
+                </span>
+                <span class="home-text83"><span>✔ Priority support</span></span>
+                <span class="home-text85">
+                  <span>✔ Premium analytics</span>
+                </span>
+                <span class="home-text87"><span>✔ Version history</span></span>
+              </div>
+              <button class="home-button2 button">Learn More</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- copyright -->
-    <div class="jumbotron jumbotron-fluid" id="copyright">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div
-            class="col-md-6 text-white align-self-center text-center text-md-left my-2"
-          >
-            Copyright © 2018 Chen, Yi-Ya.
-          </div>
-          <div
-            class="col-md-6 align-self-center text-center text-md-right my-2"
-            id="social-media"
-          >
-            <a href="#" class="d-inline-block text-center ml-2">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="d-inline-block text-center ml-2">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="d-inline-block text-center ml-2">
-              <i class="fa fa-medium" aria-hidden="true"></i>
-            </a>
-            <a href="#" class="d-inline-block text-center ml-2">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- AOS -->
-    <script src="js/aos.js"></script>
-    <script>
-      AOS.init({});
-    </script>
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
   </body>
 </html>
