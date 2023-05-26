@@ -1,20 +1,27 @@
 .navigation-links-nav {
   flex: 0 0 auto;
-  color: ffffff;
+  color: FFFFFF;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
+.navigation-links-text {
+  color: FFFFFF;
+}
 .navigation-links-text1 {
+  color: FFFFFF;
   margin-left: var(--dl-space-space-twounits);
 }
 .navigation-links-text2 {
+  color: FFFFFF;
   margin-left: var(--dl-space-space-twounits);
 }
 .navigation-links-text3 {
+  color: FFFFFF;
   margin-left: var(--dl-space-space-twounits);
 }
 .navigation-links-text4 {
+  color: FFFFFF;
   margin-left: var(--dl-space-space-twounits);
 }
 
